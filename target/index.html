@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Politica Targets Quiz</title>
+		<title>Political Targets Quiz</title>
 
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto">
 
 		<script src="script.js"></script>
 	</head>
@@ -12,15 +12,15 @@
 		<h1>Political Target</h1>
 		<h2>A new political quiz which takes multiple axes into account</h2>
 
-		<div id="instructions">
+		<div id="instructions" class="midsection">
 			<p>You will be presented with a series of 30 statements.</p>
 			<p>Respond to each statement by clicking on the emoji which corresponds to your reaction.</p>
-			<p>Remember to respond to each statement as if you are in your ideal society, not relative to current political issues.</p>
-			<p>Click the button below to begin.</p>
+			<p>Take this quiz as if you are in your ideal society, not relative to current political issues.</p>
+			<p>At the end, you will be presented with your personal political target.</p>
 			<p><a href="#" onclick="beginQuiz()">Begin Quiz</a></p>
 		</div>
 
-		<div id="statement">
+		<div id="statement" class="midsection">
 			<h3 id="statement_num">Question 1 of 30</h3>
 			<p id="statement_text">This is the first statement</p>
 			<div id="reactions">
@@ -30,6 +30,11 @@
 				<a href="#" onclick="react(1)">:)</a>
 				<a href="#" onclick="react(2)">:D</a>
 			</div>
+		</div>
+
+		<div id="footer">
+			<p>Created with &#10084; by <a href="http://solborg.xyz" target="_blank">Solborg Development</a></p>
+			<p>Copyright &copy; 2017 Cooper Johnston. See <a href="https://github.com/b0gosort/political_target" target="_blank">GitHub</a> for license terms.</p>
 		</div>
 	</body>
 </html>
