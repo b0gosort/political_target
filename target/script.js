@@ -89,33 +89,33 @@ function react(reaction) {
 function getScores() {
 	for (var i = 0; i < scores.length; i ++) {
 		scores[i] -= scores[i] * balansers[i];
+		scores[i] = (scores[i] + 20) / 40;
 	}
 
 	var scoreHues = [
-		120 * ((scores[0] + 20) / 40),
-		120 * ((scores[1] + 20) / 40) + 120,
-		120 * ((scores[2] + 20) / 40) + 240
+		120 * scores[0],
+		120 * scores[1] + 120,
+		120 * scores[2] + 240
 	];
 
-	var econColor = "hsl(" + scoreHues[0] + ", 100%, 30%)";
+	var econColor = "hsl(" + scoreHues[0] + ", 100%, 40%)";
 	var econElement = document.getElementById("econ");
 	econElement.style.background = econColor;
-	econElement.innerHTML = "Economy: " + scores[0]
+	econElement.innerHTML = "Capitalism: " + Math.floor(scores[0] * 100) + "%"
 	document.getElementById("outer").style.fill = econColor;
 
-	var libColor = "hsl(" + scoreHues[1] + ", 100%, 30%)";
+	var libColor = "hsl(" + scoreHues[1] + ", 100%, 40%)";
 	var libElement = document.getElementById("lib");
 	libElement.style.background = libColor;
-	libElement.innerHTML = "Liberty: " + scores[1];
+	libElement.innerHTML = "Liberty: " + Math.floor(scores[1] * 100) + "%";
 	document.getElementById("middle").style.fill = libColor;
 
-	var socColor = "hsl(" + scoreHues[2] + ", 100%, 30%)";
+	var socColor = "hsl(" + scoreHues[2] + ", 100%, 40%)";
 	var socElement = document.getElementById("soc");
 	socElement.style.background = socColor;
-	socElement.innerHTML = "Society: " + scores[2];
+	socElement.innerHTML = "Progress: " + Math.floor(scores[2] * 100) + "%";
 	document.getElementById("inner").style.fill = socColor;
 
-	alert(scores);
 	document.getElementById("statement").style.display = "none";
 	document.getElementById("target").style.display = "block";
 }
