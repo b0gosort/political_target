@@ -34,10 +34,6 @@ a:hover {
 	padding: 50px 0;
 }
 
-#instructions {
-	display: none;
-}
-
 #instructions a, #instructions a:visited {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -55,9 +51,9 @@ a:hover {
 	background: #1a9966;
 }
 
-/*#statement {
+#statement, #target {
 	display: none;
-}*/
+}
 
 h3 {
 	font-family: "Raleway", sans-serif;
@@ -84,6 +80,22 @@ h3 {
 
 #reactions a:hover {
 	background-color: #fac800;
+}
+
+#scores {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+#scores li {
+	display: inline-block;
+	background: #000;
+	font-size: 24px;
+	color: #fff;
+	border-radius: 8px;
+	padding: 10px 20px;
+	margin-left: none;
 }
 
 #footer {
