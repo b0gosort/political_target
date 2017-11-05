@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Politica Targets Quiz</title>
+
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto">
+
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1>Political Target</h1>
+		<h2>A new political quiz which takes multiple axes into account</h2>
+
+		<div id="instructions">
+			<p>You will be presented with a series of 30 statements.</p>
+			<p>Respond to each statement by clicking on the emoji which corresponds to your reaction.</p>
+			<p>Remember to respond to each statement as if you are in your ideal society, not relative to current political issues.</p>
+			<p>Click the button below to begin.</p>
+			<p><a href="#" onclick="beginQuiz()">Begin Quiz</a></p>
+		</div>
+
+		<div id="statement">
+			<h3 id="statement_num">Question 1 of 30</h3>
+			<p id="statement_text">This is the first statement</p>
+			<div id="reactions">
+				<a href="#" onclick="react(-2)">&gt;:(</a>
+				<a href="#" onclick="react(-1)">:(</a>
+				<a href="#" onclick="react(0)">:|</a>
+				<a href="#" onclick="react(1)">:)</a>
+				<a href="#" onclick="react(2)">:D</a>
+			</div>
+		</div>
+	</body>
+</html>
