@@ -93,9 +93,9 @@ function getScores() {
 	}
 
 	var scoreHues = [
-		120 * scores[0],
-		120 * scores[1] + 120,
-		120 * scores[2] + 240
+		270 * scores[0],
+		270 * scores[1],
+		270 * scores[2]
 	];
 
 	var econColor = "hsl(" + scoreHues[0] + ", 100%, 40%)";
